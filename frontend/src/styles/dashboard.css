@@ -3,16 +3,15 @@ body { margin: 0; background: #070b14; color: #e5e7eb; }
 .dashboard { padding: 20px; }
 .metrics { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 14px; }
 .metric,.card { background: linear-gradient(145deg,#10172a,#17233a); border: 1px solid #24314d; border-radius: 14px; padding: 14px; }
-.error { border-color: #b91c1c; color: #fecaca; }
 .metric span { display:block; color:#93c5fd; font-size: 12px; }
-.grid { display:grid; grid-template-columns: repeat(2, minmax(320px, 1fr)); gap: 12px; }
+.grid { display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .badge { padding: 4px 8px; border-radius: 999px; display:inline-block; margin-top:6px; }
 .badge.green{background:#166534}.badge.yellow{background:#a16207}.badge.orange{background:#c2410c}.badge.red{background:#b91c1c}
 .gauge { height: 14px; background: #1f2937; border-radius: 30px; overflow: hidden; }
 .gauge-fill { height: 100%; background: linear-gradient(90deg,#22c55e,#eab308,#ef4444); }
 .buttonRow { display:flex; gap:8px; }
 button { background:#2563eb; color:white; border:0; border-radius:8px; padding:8px 10px; cursor:pointer; }
-.logs { max-height: 180px; overflow: auto; }
+.logs { max-height: 150px; overflow: auto; }
 .logItem { border-bottom: 1px solid #334155; padding: 4px 0; }
 .pulse { animation: pulse 1.8s infinite; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(239,68,68,.35);} 70%{ box-shadow: 0 0 0 16px rgba(239,68,68,0);}100%{box-shadow:0 0 0 0 rgba(239,68,68,0);} }
